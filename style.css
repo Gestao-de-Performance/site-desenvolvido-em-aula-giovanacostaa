@@ -8,6 +8,8 @@
 
     --cor-fundo-carreira: #3B1270;
     --cor-caixa-busca: #5913b441;
+
+    --cor-categoria-blog: #CC7F0B;
 }
 
 *{
@@ -45,6 +47,15 @@ h1, h2, p{
     gap: 20%;
 }
 
+.corRoxoDestaque{
+    color: var(--cor-destaque);
+}
+
+@media screen and (max-width: 767px){
+    .marginSite{
+        margin: 2% 5%;
+    }
+}
 /*Início Cabeçalho*/
 nav{
     justify-content: space-between;
@@ -80,6 +91,13 @@ nav{
     white-space: nowrap;
 }
 
+.gap40{
+    gap: 40px;
+}
+
+.gap5{
+    gap: 5%;
+}
 @media screen and (max-width: 1024px){
     .flexWrap{
         flex-wrap: wrap;
@@ -130,4 +148,227 @@ nav{
 }
 /*Fim Apresentação*/
 
+/*Início Escolha o seu Curso*/
+.fundoRoxo{
+    background-color: var(--cor-fundo-carreira);
+}
 
+.containerEscolhaCurso{
+    margin-top: 7%;
+}
+
+.personagemCurso{
+    position: relative;
+    top: -80px;
+}
+
+.containerCurso{
+    padding: 4.5% 0 0 2%;
+}
+
+.subtituloEscolhaCurso{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--cor-branco);
+}
+
+.containerGraduacao{
+    margin: 5% 0 10% 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3% 2%;
+    min-width: 520px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerGraduacao span{
+    color: var(--cor-branco);
+}
+
+.botaoCurso{
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
+
+.containerBotoesCurso{
+    align-items: center;
+    gap: 15px;
+}
+
+.tituloSoftSkill{
+    font-size: 1.2rem;
+    color: var(--cor-branco);
+    font-weight: 500;
+}
+
+.containerSoftSkills{
+    gap: 80px;
+    margin-top: 5%;
+}
+
+.nomeSoftSkill{
+    font-size: 1.1rem;
+    color: var(--cor-branco);
+}
+
+.separacaoSoftSkills{
+    margin: 7% 0;
+}
+/*Tablet*/
+@media screen and (max-width: 1024px){
+    .personagemCurso {
+        top: -35px;
+    }
+
+    .containerSoftSkills {
+        padding-bottom: 3%;
+    }
+
+    .containerSoftSkills {
+        padding-bottom: 3%;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 767px){
+    .personagemCurso{
+        display: none;
+    }
+
+    .containerGraduacao{
+        min-width: 0;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .containerCurso {
+        padding: 4.5% 0 10%;
+    }   
+
+    .botaoCurso {
+        width: 40px;
+        height: 40px;
+    }
+
+    .containerSoftSkills {
+        gap: 15px;
+    }
+}
+/*Fim Escolha seu Curso*/
+
+/*Início Botão Inscrever-se*/
+.containerBotaoInscreverSe{
+    margin: 0 15%;
+    position: relative;
+    top: -80px;
+}
+
+.botaoInscreverSe{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: var(--cor-destaque);
+    color: var(--cor-branco);
+    padding: 1.5% 0;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.botaoInscreverSe:hover{
+    background-color: var(--cor-primaria-link);
+    transition: 0.3s ease-in-out;
+}
+/*Tablet*/
+@media screen and (max-width: 1024px){
+    .containerBotaoInscreverSe {
+        top: -16px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px){
+    .containerBotaoInscreverSe {
+        margin: 0;
+        top: -30px;
+    }
+}
+
+
+/*Fim Botão Inscrever-se*/
+
+/*Início Cursos Gratuitos*/
+.tituloCursosGratuitos{
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 767px){
+    .tituloCursosGratuitos{
+        margin-bottom: 5%;
+    }
+
+    .imgCursosGratuitos{
+        width: 100%;
+        height: auto;
+    }
+}
+/*Fim Cursos Gratuitos*/
+
+/*Início Blog*/
+.botaoPostBlog{
+    max-width: 340px;
+    box-shadow: 0 0 30px #0B1F4D24;
+    transition: 0.3s;
+  
+}
+
+.botaoPostBlog>span{
+    height: 57px;
+    padding: 2.5%;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.botaoPostBlog:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+      color: var(--cor-destaque);
+}
+
+.containerBlog{
+    margin-top: 3%;
+}
+
+.containerInfPost{
+    justify-content: space-between;
+    padding: 0 2.5% 2.5%;
+}
+
+.textoAmarelo{
+    color: var(--cor-categoria-blog);
+    font-weight: 600;
+}
+
+.botaoPostBlog img{
+ width: 100%;
+}
+
+@media screen and (max-width: 767px){
+    .botaoPostBlog{
+        max-width: 330px;
+    }
+
+}
+/*Fim Blog*/
+
+/*Início Rodapé*/
+.containerRodape{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 12% 10% 5%;
+    background-color: #ded0f14a;
+}
+
+/*Fim Rodapé*/
